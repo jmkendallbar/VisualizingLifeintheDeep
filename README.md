@@ -4,6 +4,10 @@ This repository hosts working code I am using to visualize disturbance in three 
 
 1) Benthic foraging behavior of humpback whales and implications for bottom-set fishing gear
 2) Visualizing behavioral and physiological responses of northern elephant seals to predator vocalizations of killer whales
-3) Visualizing behavioral and physiological responses of narwhals to anthropogenic sonar
-4) Lightscapes of fear: behavioral adaptation to changes in body condition
+      A) Linking instantaneous heart rate data to sound using psychopy (Auditory Neurophysiology python toolbox):
+      https://github.com/jmkendallbar/VisualizingDisturbance/blob/main/HR_sound.py
+      B) Linking 3D position data to movement of 3D model with Python for Autodesk Maya:
+      
+4) Visualizing behavioral and physiological responses of narwhals to anthropogenic sonar
+5) Lightscapes of fear: behavioral adaptation to changes in body condition
 https://www.jessiekb.com/lightscapes-of-fear
