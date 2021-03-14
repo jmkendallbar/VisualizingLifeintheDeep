@@ -2,8 +2,8 @@
 
 This repository hosts working code I am using to visualize disturbance in three dimensions with marine mammals through animation and interactive graphics. This involves a number of different projects:
 
-1) Benthic foraging behavior of humpback whales and implications for bottom-set fishing gear
-2) Visualizing behavioral and physiological responses of northern elephant seals to predator vocalizations of killer whales
+1) Benthic foraging behavior of humpback whales and implications for bottom-set fishing gear https://www.jessiekb.com/humpback-animation
+2) Visualizing behavioral and physiological responses of northern elephant seals to predator vocalizations of killer whales https://twitter.com/jmkendallbar/status/1365481886819045376
       
       A) Linking instantaneous heart rate data to sound using psychopy (Auditory Neurophysiology python toolbox):
       HR_sound.py
