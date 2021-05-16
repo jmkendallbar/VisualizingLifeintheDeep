@@ -9,18 +9,18 @@ HEAD_DEG = 3
 X_POS = 4
 Z_POS = 5
 DEPTH = 6
-GLIDE = 9
-STROKE = 11
+GLIDE = 10
+STROKE = 12
 
 # Defining two variables which will be used as indices where animation starts and ends
-START = 48  # start time in sec
-END = 65  # end time in sec
+START = 0  # start time in sec
+END = 80  # end time in sec
 
 fs = 16  # Sample frequency (in Hz or "samples per second")
 
 
 # Reading in .csv file (update to reflect your own path)
-with open('{DIR_PATH}/VisualizingFear/data/Glacier_stroke_analysis.csv') as csv_file:
+with open('C:/Users/jmkb9/Documents/GitHub/VisualizingFear/data/Glacier_stroke_analysis.csv') as csv_file:
     data = csv.reader(csv_file, delimiter=',')
     headers = next(data)
     print('headers: %s' % headers)
