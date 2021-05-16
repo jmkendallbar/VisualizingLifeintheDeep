@@ -1,5 +1,6 @@
 import csv
 import pymel.core as pm
+import pandas as pd
 
 # Defining variables which will be used as column indices
 SECONDS = 0
@@ -17,7 +18,6 @@ START = 0  # start time in sec
 END = 80  # end time in sec
 
 fs = 16  # Sample frequency (in Hz or "samples per second")
-
 
 # Reading in .csv file (update to reflect your own path)
 with open('C:/Users/jmkb9/Documents/GitHub/VisualizingFear/data/Glacier_stroke_analysis.csv') as csv_file:

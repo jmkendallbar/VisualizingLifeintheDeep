@@ -1,5 +1,6 @@
 # %%
-# USING PSYCHOPY
+# This script uses PyschoPy (a toolbox for neurophysiological research) to present sounds with
+# high temporal accuracy to represent extreme changes in heart rate (from 120 to 2bpm).
 import pyaudio
 import wave
 import sys
