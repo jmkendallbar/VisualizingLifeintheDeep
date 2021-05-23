@@ -33,17 +33,18 @@ def setExpressionForLayerObjects():
         control.rotateY.disconnect()
         control.rotateZ.disconnect()
         # create expression to:
-	    # 1. Allow attribute swimY to control position in swim cycle via index.
-	    # where 0 references frame 1 and 1 references frame 26 of swim cycle
-	    # 2. Let attribute glide override rotations to 0 at low swim speeds.
-	    # where 0 indicates no glide and 1 suppresses all tail rotation
-	    def arrayString(i):
-	        return '{%s}' % ','.join([str(v[i]) for v in values])
-	    
-	    values_X = arrayString(0)
-	    values_Y = arrayString(1)
-	    values_Z = arrayString(2)
-	    
+        # 1. Allow attribute swimY to control position in swim cycle via index.
+        # where 0 references frame 1 and 1 references frame 26 of swim cycle
+        # 2. Let attribute glide override rotations to 0 at low swim speeds.
+        # where 0 indicates no glide and 1 suppresses all tail rotation
+
+        def arrayString(i):
+            return '{%s}' % ','.join([str(v[i]) for v in values])
+
+        values_X = arrayString(0)
+        values_Y = arrayString(1)
+        values_Z = arrayString(2)
+
         expr = textwrap.dedent('''
         float $values_X[] = {values_X};
         float $values_Y[] = {values_Y};
