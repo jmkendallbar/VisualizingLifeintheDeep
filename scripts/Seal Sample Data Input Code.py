@@ -1,6 +1,5 @@
 import csv
 import pymel.core as pm
-import pandas as pd
 
 # Defining variables which will be used as column indices
 SECONDS = 0
@@ -53,10 +52,12 @@ with open('C:/Users/jmkb9/Documents/GitHub/VisualizingFear/data/Glacier_stroke_a
             
             swim_stroke = int(row[STROKE])
             if swim_stroke:
-                object.swimY.setKey(value=0, time=time)
-                object.swimY.setKey(value=1, time=time - .001)
-                pm.keyTangent(object.swimY, inTangentType='linear', outTangentType='linear', time=(time - .001, time))
+                object.swim.setKey(value=0, time=time)
+                object.swim.setKey(value=1, time=time - .001)
+                pm.keyTangent(object.swim, inTangentType='linear', outTangentType='linear', time=(time - .001, time))
 
+
+#FIXMEEE
             # ..setKey function sets a keyframe of the given value at the given time.
             object.translateX.setKey(value=translateX_value, time=time)
             object.translateZ.setKey(value=translateZ_value, time=time)
