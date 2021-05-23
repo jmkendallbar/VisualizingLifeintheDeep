@@ -1,0 +1,25 @@
+{
+    "id": "84A7B897",
+    "path": "~/GitHub/VisualizingFear/scripts/HR_data_wrangling.Rmd",
+    "project_path": "scripts/HR_data_wrangling.Rmd",
+    "type": "r_markdown",
+    "hash": "261518618",
+    "contents": "",
+    "dirty": false,
+    "created": 1621360064723.0,
+    "source_on_save": false,
+    "relative_order": 1,
+    "properties": {
+        "tempName": "Untitled1",
+        "cursorPosition": "58,0",
+        "scrollLine": "36"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1621361098,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1621361111045,
+    "read_only": false,
+    "read_only_alternatives": []
+}

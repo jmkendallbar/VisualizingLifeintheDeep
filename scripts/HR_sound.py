@@ -1,49 +1,48 @@
-# %%
-# This script uses PyschoPy (a toolbox for neurophysiological research) to present sounds with
-# high temporal accuracy to represent extreme changes in heart rate (from 120 to 2bpm).
-import pyaudio
-import wave
-import sys
-import os
-import wavio
-import time
-from datetime import datetime
-from psychopy import prefs
-import pandas as pd
-import numpy as np
-import psychtoolbox as ptb
+"""
+LINKING HEART RATE DATA TO SOUND
+Created on Tue May 18 10:35:14 2021
 
-data_path = "G:\Shared drives\Elephant Seal Animation for Gitte\ESeal_Animation\data"
-output_path = "G:\Shared drives\Elephant Seal Animation for Gitte\ESeal_Animation"
+@author: Jessica Kendall-Bar
+"""
+#%%
+# import libraries
+import os
+import pandas as pd
+from psychopy import prefs, core, sound
+
+# UPDATE ME
+data_path = "C:/Users/jmkb9/Documents/GitHub/VisualizingFear/data"
 
 os.chdir(data_path)
 os.getcwd()
 
-test = pd.read_csv('HR_data_for_Python.csv', sep=",", header=1, squeeze=True)
-wait = pd.read_csv('HR_wait_for_Python.csv', sep=",", header=0, squeeze=True)
-
 # From this website https://mbraintrain.com/how-to-set-up-precise-sound-stimulation-with-psychopy-and-pylsl/
-from psychopy import prefs
-
-# change the pref libraty to PTB and set the latency mode to high precision
+# Change the pref libraty to PTB (psychtoolbox) 
 prefs.hardware['audioLib'] = 'PTB'
+# Set the latency mode to high precision (3)
 prefs.hardware['audioLatencyMode'] = 3
 
-# import other necessary libraries
-from psychopy import core, event, sound
-
-seconds = pd.read_csv('HR_subset_for_Reaper.csv', sep=',', header=None, squeeze=True)
+# Load in heartbeat sound
 badum = sound.Sound('single_heartbeat.wav')
 
-for i in range(0, len(wait)):
-    playback_time = core.getTime()
-    curr_time = core.getTime() - playback_time  # get elapsed time
-    while curr_time < wait[i]:
-        curr_time = core.getTime() - playback_time  # get elapsed time
-        print("DEBUG: Initial wait %3.5f" % curr_time)
-        core.wait(0.05)  # wait 50 milliseconds
-    # if test[i] == 1:   
-    badum.play()
-    core.wait(0.45)  # Determined by shortest interbeat interval
-    # print("First Badum at %f" %(datetime.now()))
-    i += 1
+# Load in heartrate data (with array of interbeat intervals in seconds)
+HR_data = pd.read_csv('narwhal_HR.csv', sep=",", header=0, squeeze=True)
+
+# After heartbeat plays, wait interval - duration of heartbeat until next.
+HR_data['Wait'] = HR_data['Interval'] - 0.45
+
+# Initializing wait variable with wait durations
+wait = HR_data['Wait']
+# Fill in first wait time with time until first value (no corresponding interbeat interval)
+wait[0] = HR_data.iloc[0]['Seconds']
+
+for i in range(0,len(wait)): # for all values in wait series
+    playback_time = core.getTime() # get current time
+    curr_time = core.getTime() - playback_time # get elapsed time
+    while curr_time < wait[i]: # until it's time to play next heart beat
+        curr_time = core.getTime() - playback_time # continue getting elapsed time
+        print("Seconds since last heartbeat: %3.5f" %curr_time)
+        core.wait(0.05) # wait 50 milliseconds
+    badum.play() # play next heartbeat
+    core.wait(0.45) # determined by duration of heartbeat
+    i += 1 # around and around we go!
