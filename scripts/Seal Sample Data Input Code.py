@@ -1,16 +1,23 @@
 import csv
 import pymel.core as pm
 
+def getLayerObjects(layer):
+    """Get all the objects in an AnimLayer"""
+    pm.mel.eval('string $layers[]={"%s"}; layerEditorSelectObjectAnimLayer($layers);' % layer)
+    return pm.selected()
+
 # Defining variables which will be used as column indices
 SECONDS = 0
-PITCH_DEG = 1
-ROLL_DEG = 2
-HEAD_DEG = 3
-X_POS = 4
-Z_POS = 5
-DEPTH = 6
-GLIDE = 10
-STROKE = 12
+ACCX = 1
+ACCY = 2
+ACCZ = 3
+DEPTH = 4
+PROCESSED_STROKE = 5
+STROKE_RATE = 6
+GLIDE = 7
+PITCH_DEG = 8
+ROLL_DEG = 9
+STROKE = 10
 
 # Defining two variables which will be used as indices where animation starts and ends
 START = 0  # start time in sec
@@ -58,20 +65,22 @@ with open('C:/Users/jmkb9/Documents/GitHub/VisualizingFear/data/Glacier_stroke_a
 
 
 #FIXMEEE
+            controls = getLayerObjects('Position_Rotation')
+            depth_value = float(row[DEPTH])
             # ..setKey function sets a keyframe of the given value at the given time.
-            object.translateX.setKey(value=translateX_value, time=time)
-            object.translateZ.setKey(value=translateZ_value, time=time)
+            #object.translateX.setKey(value=translateX_value, time=time)
+            #object.translateZ.setKey(value=translateZ_value, time=time)
             object.translateY.setKey(value=depth_value, time=time)
 
             pitch_value = float(row[PITCH_DEG])
-            head_value = float(row[HEAD_DEG])
+            #head_value = float(row[HEAD_DEG])
             roll_value = float(row[ROLL_DEG])
 
             # ..setKey function sets a keyframe of the given value at the given time.
-            object.rotateX.setKey(value=pitch_value, time=time)
-            object.rotateY.setKey(value=head_value, time=time)
-            object.rotateZ.setKey(value=roll_value, time=time)
+            #object.rotateX.setKey(value=pitch_value, time=time)
+            #object.rotateY.setKey(value=head_value, time=time)
+            #object.rotateZ.setKey(value=roll_value, time=time)
 
-            print 'setting y= %s msw, x= %s, z= %s, rotX= %s, rotY= %s, rotZ = %s for time= %s frames' % (
-                depth_value, translateX_value, translateZ_value, pitch_value, head_value, roll_value, time)
+            print 'setting y= %s msw, rotX= %s, rotZ = %s for time= %s frames' % (
+                depth_value, pitch_value,  roll_value, time)
 
