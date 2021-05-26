@@ -27,9 +27,9 @@ Example data from a diving elephant seal sampled at 16Hz where channels are as f
 * **Glide Controller** = We applied an Arithmetic function in LabChart to turn values within (0bpm,15bpm) to 0: `SmoothSec(Window(Ch6,0,15),15)`
 For our elephant seal animation, we set swim speeds between 0 and 15 strokes per minute to 1 (gliding) and then applied a triangular smoothing window of 15 seconds.
 * **Stroke Detected** = Wherever a stroke event is detected, make this 1, otherwise keep it as 0. Can use Excel formula `=IF(J144="",0,1)`.
-![](2021-05-25-16-56-50_esealswimdata.png)
+![](images/2021-05-25-16-56-50_esealswimdata.png)
 
-![](2021-05-25-17-18-20_esealexampledata.png)
+![](images/2021-05-25-17-18-20_esealexampledata.png)
 
 ## Animate a swim cycle using an animation layer:
 We make use of an educational license of Autodesk Maya for this animation, but it is possible to adapt this pipeline to Blender or another animation software.
@@ -44,16 +44,16 @@ We make use of an educational license of Autodesk Maya for this animation, but i
 2. **Add central keyframes.** Add a keyframe for the opposite position at frame 13.
 
     Ex. For elephant seal model, set tail position to far right by adjusting rotateY of tail joints to +15 at frame 13.
-    ![](2021-05-25-08-42-18_esealswimcycle1.png)
+    ![](images/2021-05-25-08-42-18_esealswimcycle1.png)
 3. **Offset keys** for a more organic look, so that distal joints move with a delay compared to more proximal joints.
 
     Ex. For elephant seal model, work from the top of the joint hierarchy from proximal (around the axillary region) to distal locations (tip of nose, tip of fore flippers, tip of tail). For each subsequent joint, offset all three keys (-15 +15 -15) one keyframe later than the more proximal joint. 
-    ![](2021-05-25-08-47-52_esealswimcycle_offset.png)
+    ![](images/2021-05-25-08-47-52_esealswimcycle_offset.png)
 4. **Optional: add additional keyframes** and rotation dimensions to improve accuracy and complexity of locomotion cycle. 
     Ex. For elephant seal model, we created a figure-8 motion path for the fore-flippers which included rotation in three dimensions. 
-    ![](2021-05-25-08-28-11_esealforeflipper.png)
+    ![](images/2021-05-25-08-28-11_esealforeflipper.png)
 1. **Loop Animation**: Select all keyframes and cycle your animation to pre-infinity and post-infinity so that the animation curves interpolate correctly.
-![](2021-05-25-17-23-42_esealswimcycle_infinitycurves.png)
+![](images/2021-05-25-17-23-42_esealswimcycle_infinitycurves.png)
 
 ## Import Swim Controller
 If you have animated a custom swim cycle with a new 3D model, you will need to import our swim controller into your new scene (or create your own with the same name and extra attributes). To do this:
@@ -82,6 +82,10 @@ Next, we will allow the data to drive the animation.
 1. Assure that the script uses the **proper sampling frequency (fs = __Hz), start time, and end time (in seconds).**
 1. **Run script** to add keyframes from the data.
 The set keyframes for the `swim` and `glide` attributes of `SWIM_CONTROL` should look like this:
-![](2021-05-25-19-26-47_esealswimdata_inputmaya.png)
+![](images/2021-05-25-19-26-47_esealswimdata_inputmaya.png)
 
 And your video should look something like this:
+
+## Final Production
+
+From here, you can place your animal into a scene and/or add additional keyframes to set its position and rotation. See tutorials `Create_Underwater_Environment.md` and `Linking_Position_Rotation.md` for more information.
