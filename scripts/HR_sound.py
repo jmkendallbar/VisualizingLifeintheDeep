@@ -23,7 +23,8 @@ prefs.hardware['audioLib'] = 'PTB'
 prefs.hardware['audioLatencyMode'] = 3
 
 # Load in heartbeat sound
-badum = sound.Sound('single_heartbeat.wav')
+badum = sound.Sound('single_heartbeat.wav') #sound of heart beating
+# swish = sound.Sound('01 Tail Noise.wav') #sound of tail swishing back and forth
 
 # Load in heartrate data (with array of interbeat intervals in seconds)
 HR_data = pd.read_csv('narwhal_HR.csv', sep=",", header=0, squeeze=True)
