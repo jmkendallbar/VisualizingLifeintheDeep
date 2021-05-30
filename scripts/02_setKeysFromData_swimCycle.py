@@ -24,7 +24,7 @@ END = 860  # end time in sec
 fs = 16  # Sample frequency (in Hz or "samples per second")
 
 # Reading in .csv file (update to reflect your own path)
-with open('C:/Users/jmkb9/Documents/GitHub/VisualizingFear/data/V6_Example_StrokeRateData.csv') as csv_file:
+with open('~data/02_Example_StrokeRateData.csv') as csv_file:
     data = csv.reader(csv_file, delimiter=',')
     headers = next(data)
     print('headers: %s' % headers)

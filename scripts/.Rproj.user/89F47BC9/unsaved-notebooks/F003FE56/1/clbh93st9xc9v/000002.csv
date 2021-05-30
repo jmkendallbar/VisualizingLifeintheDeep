@@ -1,4 +1,0 @@
-"0","HR_data  <- read.csv(here(""data"",""narwhal_HR.csv""))"
-"2","cannot open file 'C:/Users/jmkb9/Documents/GitHub/VisualizingFear/scripts/Data_Wrangling/data/narwhal_HR.csv': No such file or directory"
-"2","Error in file(file, ""rt"") : cannot open the connection
-"
