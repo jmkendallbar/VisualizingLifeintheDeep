@@ -1,4 +1,4 @@
-# Visualizing life beneath the sea
+# Visualizing life under the sea: a creative pipeline for data-driven animations that facilitate marine mammal research, outreach, and conservation
 
 This repository hosts working code we are using to visualize the underwater behavior of marine mammals through animation and interactive graphics. This involves a number of different projects, listed below in more detail. This repository also hosts three in-depth tutorials, where you can learn to create realistic underwater animations that link accelerometer and heart rate data to motion and sound. 
 
