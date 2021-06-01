@@ -1,19 +1,21 @@
-# Visualizing Fear in Three Dimensions
+# Visualizing life beneath the sea
 
-This repository hosts working code I am using to visualize disturbance in three dimensions with marine mammals through animation and interactive graphics. This involves a number of different projects:
+This repository hosts working code we are using to visualize the underwater behavior of marine mammals through animation and interactive graphics. This involves a number of different projects, listed below in more detail. This repository also hosts three in-depth tutorials, where you can learn to create realistic underwater animations that link accelerometer and heart rate data to motion and sound. 
 
-1) Benthic foraging behavior of humpback whales and implications for bottom-set fishing gear https://www.jessiekb.com/humpback-animation
-2) Visualizing behavioral and physiological responses of northern elephant seals to predator vocalizations of killer whales https://twitter.com/jmkendallbar/status/1365481886819045376
-      
-      A) Linking instantaneous heart rate data to sound using psychopy (Auditory Neurophysiology python toolbox):
-      HR_sound.py
+We have additional tutorials and resources on our webpage: [Art for Science Communication Resources](https://jessiekb.com/resources)
 
-      B) Linking 3D position data to movement of 3D model with Python for Autodesk Maya:
-      Seal Sample Data Input Code.py
-      references: Seal Sample Data CSV files
-      
-      C) Testing sound generation in Super Collider - was super cool but too fancy for what I needed.
-      
-4) Visualizing behavioral and physiological responses of narwhals to anthropogenic sonar
-5) Lightscapes of fear: behavioral adaptation to changes in body condition
-https://www.jessiekb.com/lightscapes-of-fear
+We established an interdisciplinary team with experts in illustration, animation, data visualization, visual effects, computer science, science communication, and marine mammal biology. We united experts in different animal systems to develop the 4 animations described below. These animations were designed to accompany the publication of scientific articles, some of which are in preparation and others published. Each animation was created following a four-stage approach: conceptualization (storyboarding and scriptwriting), asset creation (creating custom models and illustrations), animation of behavior and physiology (pairing data to 3D and 2D assets), and final production (annotations, narration, and music). 
+
+Our four animations incorporate the data above to address our key tasks:
+
+## Animation 1: Humpback alliance. 
+Our 3D humpback whale animation visualizes the position and orientation of a group of whales foraging on the ocean floor to determine whether there is coordination or competition between individuals of the group (Wiley et al. in prep). Our animation emphasizes the importance of minimizing the use of bottom-set fishing gear that could disturb and entangle bottom-feeding humpbacks.
+
+## Animation 2: Lightscapes of Fear. 
+Our 2D elephant seal animation demonstrates state-dependent risk aversion by showing the shifting decision-making by a seal as it travels across the North Pacific (Beltran et al., 2021). The animation visualizes the geographic location, body condition, and rest timing of elephant seals on their 7-month-long foraging trip. This animation shows that as an animal shifts from inferior to superior body condition (negative buoyancy to positive buoyancy), the seals begin to prioritize resting during the safer, darker, and earlier hours of the day. 
+
+## Animation 3: Sounds of Fear. 
+Our 3D elephant seal animation visualizes the position, orientation, swimming behavior, and heart rate of a seal as it dives under two conditions: with and without disturbance caused by the vocalization of a killer whale predator produced from an animal-borne acoustic tag (McDonald et al. in prep). We pair the animal’s heart rate and stroke rate data to sound. This animation demonstrates the fear response of an elephant seal in the wild and helps us understand how these animals respond to stress in their natural environment.
+
+## Animation 4: Paradox of Fear. 
+Our 3D narwhal animation visualizes the position, orientation, swimming behavior, and heart rate of a narwhal after release from net entanglement during annual indigenous hunts in East Greenland and during exposure to anthropogenic noise. We pair heart rate and stroke rate data to sound. The animation demonstrates the paradoxical fear response of a narwhal, where a very low heart rate co-occurs with rapid stroking (Williams et al., 2017). This animation demonstrates the impact of an acute disturbance on a wild narwhal and elucidates potential paradoxical physiological responses which could contribute to marine mammal strandings.
