@@ -1,7 +1,7 @@
 # Linking three dimensional position and rotation data to a 3D model
 These steps can be applied to animating the position and orientation of any 3D object over time. Here we demonstrate the concept with some fake sample data and a simple 3D model of an elephant seal.
 
-There is a [PDF](https://drive.google.com/file/d/1Zm0K7j4koVARX3nUgLMaKWe7GX1JuIE0/view) and [video version](https://www.youtube.com/watch?v=gSccR7FzP0Q&feature=emb_imp_woyt) of this tutorial if you prefer to learn in either of those formats. See our [resources webpage](https://www.jessiekb.com/resources) for a full list of our tutorials.
+There is a [PDF](https://drive.google.com/file/d/1Zm0K7j4koVARX3nUgLMaKWe7GX1JuIE0/view) and [video version](https://www.youtube.com/watch?v=gSccR7FzP0Q&feature=emb_imp_woyt) of this tutorial if you prefer to learn in either of those formats. See our [online learning center](https://www.jessiekb.com/resources) for a full list of our tutorials.
 [![](images/2021-05-29-18-36-14_PositionRotation_Video.png)](https://www.youtube.com/watch?v=gSccR7FzP0Q&feature=emb_imp_woyt)
 
 ## Data Processing
