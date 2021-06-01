@@ -4,9 +4,7 @@ This repository hosts working code we are using to visualize the underwater beha
 
 We have additional tutorials and resources on our webpage: [Art for Science Communication Resources](https://jessiekb.com/resources)
 
-We established an interdisciplinary team with experts in illustration, animation, data visualization, visual effects, computer science, science communication, and marine mammal biology. We united experts in different animal systems to develop the 4 animations described below. These animations were designed to accompany the publication of scientific articles, some of which are in preparation and others published. Each animation was created following a four-stage approach: conceptualization (storyboarding and scriptwriting), asset creation (creating custom models and illustrations), animation of behavior and physiology (pairing data to 3D and 2D assets), and final production (annotations, narration, and music). 
-
-Our four animations incorporate the data above to address our key tasks:
+We established an interdisciplinary team with experts in illustration, animation, data visualization, visual effects, computer science, science communication, and marine mammal biology. We united experts in different animal systems to develop the 4 animations described below. These animations were designed to accompany the publication of scientific articles, some of which are in preparation and others published. Each animation was created following a four-stage approach: conceptualization (storyboarding and scriptwriting), asset creation (creating custom models and illustrations), animation of behavior and physiology (pairing data to 3D and 2D assets), and final production (annotations, narration, and music).
 
 ## Animation 1: Humpback alliance. 
 Our 3D humpback whale animation visualizes the position and orientation of a group of whales foraging on the ocean floor to determine whether there is coordination or competition between individuals of the group (Wiley et al. in prep). Our animation emphasizes the importance of minimizing the use of bottom-set fishing gear that could disturb and entangle bottom-feeding humpbacks.
