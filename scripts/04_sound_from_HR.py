@@ -11,7 +11,7 @@ import pandas as pd
 from psychopy import prefs, core, sound
 
 # UPDATE ME
-data_path = "~/data"
+data_path = "C:/Users/Jessie/Documents/Dissertation Sleep/Visualization/Data"
 
 os.chdir(data_path)
 os.getcwd()
@@ -27,7 +27,7 @@ badum = sound.Sound('04_heart_badum.wav') #sound of heart beating
 # swish = sound.Sound('01 Tail Noise.wav') #sound of tail swishing back and forth
 
 # Load in heartrate data (with array of interbeat intervals in seconds)
-HR_data = pd.read_csv('Example_Narwhal_HRdata.csv', sep=",", header=0, squeeze=True)
+HR_data = pd.read_csv('eseal_HR.csv', sep=",", header=0, squeeze=True)
 
 # After heartbeat plays, wait interval - duration of heartbeat until next.
 HR_data['Wait'] = HR_data['Interval'] - 0.45
