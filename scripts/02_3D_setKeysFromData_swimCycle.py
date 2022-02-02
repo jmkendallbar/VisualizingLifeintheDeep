@@ -34,7 +34,7 @@ with open('~data/02_Example_StrokeRateData.csv') as csv_file:
                 time = float(i) / fs - START #Translate .csv data time into animation time
                 time = time * fs #Get from frames to seconds
              
-                depth_value      = -float(row[DEPTH])
+                depth_value = -float(row[DEPTH])
              
                 #Define which object will be transformed according to data (use name as described in "Outliner")
                 object = pm.ls('ESEAL_PLACER')[0] 
@@ -50,18 +50,18 @@ with open('~data/02_Example_StrokeRateData.csv') as csv_file:
                 
                 object.rotateZ.setKey(value=pitch_value, time=time)
                 object.rotateX.setKey(value=roll_value, time=time)
-
+                
                 object = pm.ls('SWIM_CONTROL')[0]
-            
+                
                 glide = float(row[GLIDE])
                 object.glide.setKey(value=glide, time=time)
-            
+                
                 swim_stroke = int(row[STROKE])
                 if swim_stroke:
                     object.swim.setKey(value=0, time=time)
                     object.swim.setKey(value=1, time=time - .001)
                     pm.keyTangent(object.swim, inTangentType='linear', outTangentType='linear', time=(time - .001, time))
-
+                
                 print('setting swim = %s, glide = %s, y= %s units, pitch= %s, roll = %s for time= %s frames' % (swim_stroke, glide, depth_value , pitch_value , roll_value , time))
                 
 
