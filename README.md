@@ -4,9 +4,9 @@
 This repository hosts working code we are using to visualize the underwater behavior of marine mammals through animation and interactive graphics. This involves a number of different projects, listed below in more detail. This repository also hosts three in-depth tutorials, where you can learn to create realistic underwater animations that link accelerometer and heart rate data to motion and sound. 
 
 We have additional tutorials and resources on our webpage: [Art for Science Communication Resources](https://jessiekb.com/resources)
-Here is a link to our [**Visualizing Life in the Deep**]() IEEE VIS Paper that explains our data visualization pipeline:
+Here is a link to our [**Visualizing Life in the Deep**](https://ieeexplore.ieee.org/document/9622956) IEEE VIS Paper that explains our data visualization pipeline:
 
-
+![](images/Overview_figure-01.png)
 
 We established an interdisciplinary team with experts in illustration, animation, data visualization, visual effects, computer science, science communication, and marine mammal biology. We united experts in different animal systems to develop the 4 animations described below. These animations were designed to accompany the publication of scientific articles, some of which are in preparation and others published. Each animation was created following a four-stage approach: conceptualization (storyboarding and scriptwriting), asset creation (creating custom models and illustrations), animation of behavior and physiology (pairing data to 3D and 2D assets), and final production (annotations, narration, and music).
 
