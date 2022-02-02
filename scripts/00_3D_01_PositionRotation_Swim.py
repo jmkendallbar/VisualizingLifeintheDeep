@@ -1,5 +1,6 @@
 import csv
-import pymel.core as pm
+import pymel.core as pm #Importing pymel (see documentation here: https://help.autodesk.com/cloudhelp/2015/ENU/Maya-Tech-Docs/PyMel/index.html
+import maya.cmds as cmds #Importing maya commands
 
 #Defining variables which will be used as column indices
 
