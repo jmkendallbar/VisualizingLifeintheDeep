@@ -18,3 +18,14 @@ Our 3D elephant seal animation visualizes the position, orientation, swimming be
 
 ## Animation 4: Paradox of Fear. 
 Our 3D narwhal animation visualizes the position, orientation, swimming behavior, and heart rate of a narwhal after release from net entanglement during annual indigenous hunts in East Greenland and during exposure to anthropogenic noise. We pair heart rate and stroke rate data to sound. The animation demonstrates the paradoxical fear response of a narwhal, where a very low heart rate co-occurs with rapid stroking (Williams et al., 2017). This animation demonstrates the impact of an acute disturbance on a wild narwhal and elucidates potential paradoxical physiological responses which could contribute to marine mammal strandings.
+
+## Scripts
+
+Instructions for the following 3D animation steps can be found in: [*00_3D_00_StrokeData_to_Swim.md*]()
+
+1. *00_3D_00_swim_and_glide.py*: Script to link animated swim cycle to a swim and glide controller
+Python script to run in Autodesk Maya's Script editor 
+
+## Sample Scenes
+
+## Sample Data
