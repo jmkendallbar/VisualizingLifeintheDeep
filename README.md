@@ -35,7 +35,7 @@ Python script to run in Autodesk Maya's Script editor to drive the position, rot
 
 Instructions for the following 3D animation steps can be found in: [*01_3D_setKeysFromData_positionRotation.md*](https://github.com/jmkendallbar/VisualizingLifeintheDeep/blob/main/scripts/01_3D_setKeysFromData_positionRotation.md)
 
-3. [*01_3D_setKeysFromData_positionRotation.py*](https://github.com/jmkendallbar/VisualizingLifeintheDeep/blob/main/scripts/01_3D_setKeysFromData_positionRotation.py): Simpler version of script 2 above that only includes Position & Rotation Data
+3. [**01_3D_setKeysFromData_positionRotation.py**](https://github.com/jmkendallbar/VisualizingLifeintheDeep/blob/main/scripts/01_3D_setKeysFromData_positionRotation.py): Simpler version of script 2 above that only includes Position & Rotation Data
 
 4. [*02_3D_setKeysFromData_swimCycle.py*](https://github.com/jmkendallbar/VisualizingLifeintheDeep/blob/main/scripts/02_3D_setKeysFromData_swimCycle.py): Simpler version of script 2 above that includes pitch, roll, depth, and swimming behavior, but NOT heading data (use if you do have accelerometer but not magnetometer data)
 
