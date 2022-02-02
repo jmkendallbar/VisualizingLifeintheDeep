@@ -25,6 +25,8 @@ Instructions for the following 3D animation steps can be found in: [**00_3D_00_S
 
 1. [**00_3D_00_swim_and_glide.py**](https://github.com/jmkendallbar/VisualizingLifeintheDeep/blob/main/scripts/00_3D_00_swim_and_glide.py): Script to link animated swim cycle to a swim and glide controller
 Python script to run in Autodesk Maya's Script editor to add an expression a `SWIM_CONTROL` object that creates two separate attributes: 
+
+
 Attribute     | Function                                                     | Input
 ------------- | ------------------------------------------------------------ | ------------
 `Swim`        | Links each stroke detection to the beginning of a swim cycle | 0 between strokes or when gliding; 1 at the beginning of a detected stroke (binary only)
