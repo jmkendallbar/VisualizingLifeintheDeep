@@ -1,6 +1,11 @@
 import csv
-import pymel.core as pm #Importing pymel (see documentation here: https://help.autodesk.com/cloudhelp/2015/ENU/Maya-Tech-Docs/PyMel/index.html
+import pymel.core as pm #Importing pymel (see documentation here: 
+# https://help.autodesk.com/cloudhelp/2015/ENU/Maya-Tech-Docs/PyMel/index.html
 import maya.cmds as cmds #Importing maya commands
+
+pm.window(title='PositionRotation_Swim Demo',width=300)
+pm.columnLayout(adjustableColumn=True)
+pm.showWindow()
 
 #Defining variables which will be used as column indices
 
