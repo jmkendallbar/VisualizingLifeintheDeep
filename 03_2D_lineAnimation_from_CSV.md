@@ -83,7 +83,7 @@ There is a [PDF](https://drive.google.com/file/d/11D-X7jaVxfqbnESMDX1sLL_BUEhXPr
 
         var current = Math.floor(effect("Slider Control")("Slider"))
 
-        var dailyCaseData = footage("03_Example_LineAnimation_COVIDdata.csv").dataValue([3,current]);
+        var dailyCaseData = footage("CA_COVID_History.csv").dataValue([3,current]);
 
         dailyCaseData;
 
