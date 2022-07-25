@@ -79,7 +79,13 @@ There is a [PDF](https://drive.google.com/file/d/11D-X7jaVxfqbnESMDX1sLL_BUEhXPr
 
 1. **Add text counter**
 1. **Add a slider control**
-1. **Add an expression**
+1. **Add an expression**: 
+
+`var current = Math.floor(effect("Slider Control")("Slider"))
+
+var dailyCaseData = footage("03_Example_LineAnimation_COVIDdata.csv").dataValue([3,current]);
+
+dailyCaseData;`
 
     ![](images/2021-05-29-19-46-16_step28_29_30.png)
 
