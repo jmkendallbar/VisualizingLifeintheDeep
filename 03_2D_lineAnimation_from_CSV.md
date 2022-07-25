@@ -14,7 +14,7 @@ There is a [PDF](https://drive.google.com/file/d/11D-X7jaVxfqbnESMDX1sLL_BUEhXPr
 1. **Create path with the pen tool**
     ![](images/2021-05-29-19-36-08_step5_6.png)
 1. **Format shape**
-1. **Open expression**
+1. **Open expression** (Alt + click the stopwatch for the path in the shape layer)
 1. **Add this expression:**
     This expression links the x and y values of the data to horizontal and vertical positions on the canvas.
 
