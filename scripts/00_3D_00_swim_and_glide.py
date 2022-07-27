@@ -28,7 +28,7 @@ def setExpressionForLayerObjects():
     for control in controls:
         # store rotation values for animated swim cycle
         # where values is an array of 26 values with index 0 = frame 1
-        values = [control.rotate.get(time=t) for t in xrange(1, 26 + 1)]
+        values = [control.rotate.get(time=t) for t in range(1, 26 + 1)]
         # free controls to allow application of expression
         control.rotateX.disconnect()
         control.rotateY.disconnect()
