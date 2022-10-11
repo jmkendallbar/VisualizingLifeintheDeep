@@ -165,7 +165,7 @@ Your data should be translated to a format similar to this:
 1. **Loop the image sequence using an expression**
 
     Enter this code to loop through all the images in the folder:
-    `File2.frameExtensions=((frame%120)+1);`
+    `file2.frameExtension=((frame%120)+1);`
 
     ![](images/2021-05-29-18-41-24_PositionRotation_step27.png)
 
