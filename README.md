@@ -34,7 +34,7 @@ Our 3D narwhal animation visualizes the position, orientation, swimming behavior
 
 ## Scripts
 
-Instructions for the following 3D animation steps can be found in: [**00_3D_00_StrokeData_to_Swim.md**](https://github.com/jmkendallbar/VisualizingLifeintheDeep/blob/main/scripts/00_3D_00_StrokeData_to_Swim.md)
+Instructions for the following 3D animation steps can be found in: [**00_3D_00_StrokeData_to_Swim.md**](https://github.com/jmkendallbar/VisualizingLifeintheDeep/blob/main/00_3D_00_StrokeData_to_Swim.md)
 
 1. [**00_3D_00_swim_and_glide.py**](https://github.com/jmkendallbar/VisualizingLifeintheDeep/blob/main/scripts/00_3D_00_swim_and_glide.py): Script to link animated swim cycle to a swim and glide controller
 Python script to run in Autodesk Maya's Script editor to add an expression a `SWIM_CONTROL` object that creates two separate attributes: 
@@ -48,13 +48,13 @@ Attribute     | Function                                                     | I
 2. [**00_3D_01_PositionRotation_Swim.py**](https://github.com/jmkendallbar/VisualizingLifeintheDeep/blob/main/scripts/00_3D_01_PositionRotation_Swim.py): Script to link position, rotation, and swim data to animation
 Python script to run in Autodesk Maya's Script editor to drive the position, rotation, and swimming behavior of a swim-controlled scene (output from above OR using [**swim-controlled elephant seal template scene**](https://github.com/jmkendallbar/VisualizingLifeintheDeep/blob/main/scenes/V3_elephantseal_swimcontrolled_template_V1.ma).
 
-Instructions for the following 3D animation steps can be found in: [**01_3D_setKeysFromData_positionRotation.md**](https://github.com/jmkendallbar/VisualizingLifeintheDeep/blob/main/scripts/01_3D_setKeysFromData_positionRotation.md)
+Instructions for the following 3D animation steps can be found in: [**01_3D_setKeysFromData_positionRotation.md**](https://github.com/jmkendallbar/VisualizingLifeintheDeep/blob/main/01_3D_setKeysFromData_positionRotation.md)
 
 3. [**01_3D_setKeysFromData_positionRotation.py**](https://github.com/jmkendallbar/VisualizingLifeintheDeep/blob/main/scripts/01_3D_setKeysFromData_positionRotation.py): Simpler version of script 2 above that only includes Position & Rotation Data
 
 4. [**02_3D_setKeysFromData_swimCycle.py**](https://github.com/jmkendallbar/VisualizingLifeintheDeep/blob/main/scripts/02_3D_setKeysFromData_swimCycle.py): Simpler version of script 2 above that includes pitch, roll, depth, and swimming behavior, but NOT heading data (use if you do have accelerometer but not magnetometer data)
 
-Instructions for the following 2D animation steps can be found in: [**03_2D_lineAnimation_from_CSV.md**](https://github.com/jmkendallbar/VisualizingLifeintheDeep/blob/main/scripts/03_2D_lineAnimation_from_CSV.md)
+Instructions for the following 2D animation steps can be found in: [**03_2D_lineAnimation_from_CSV.md**](https://github.com/jmkendallbar/VisualizingLifeintheDeep/blob/main/03_2D_lineAnimation_from_CSV.md)
 
 5. [**03_2D_lineAnimation_from_CSV.js**](https://github.com/jmkendallbar/VisualizingLifeintheDeep/blob/main/scripts/03_2D_lineAnimation_from_CSV.js): Script to create data-driven line animations in After Effects
 
