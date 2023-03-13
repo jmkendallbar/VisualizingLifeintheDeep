@@ -68,7 +68,7 @@ If you have animated a custom swim cycle with a new 3D model, you will need to i
 Here, we connect the `SWIM_CONTROL` object to the keyframes in the 26-frame swim cycle, so that simple inputs for two attributes, `swim` and `glide` of the `SWIM_CONTROL` can control a complex animation cycle.
 
 1. Open clean Maya scene with a 26-frame animated cycle, with all controls added to a single layer. Save a copy of this scene before linking the swim controller. 
-1. Open script editor and `02_swim_and_glide.py` Python script. 
+1. Open script editor and `00_3D_00_swim_and_glide.py` Python script. 
 1. Before running the script, verify that the layer which contains your animation controls is being referenced properly (change from the default `'Swim_Cycle'`).
 1. Run the script! :)
 1. Save a new version of your swim controlled scene.
